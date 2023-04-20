@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:text="@string/data_product"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/productName"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="left|center"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/border_input"
+        android:hint="@string/name_product"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:inputType="textPersonName"
+        android:autofillHints=""
+        tools:ignore="RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/productType"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="left|center"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/border_input"
+        android:hint="@string/type_product"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:inputType="text"
+        tools:ignore="RtlHardcoded,TextFields"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/productPrice"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="left|center"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/border_input"
+        android:hint="@string/price_product"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:inputType="numberDecimal"
+        tools:ignore="RtlHardcoded,TextFields"
+        android:autofillHints="" />
+
+    <LinearLayout
+        android:id="@+id/btnOpenDocument"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/border_input"
+        android:weightSum="10">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:src="@drawable/icons_opened_folder"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/labelNameImgProduct"
+            android:layout_width="0dp"
+            android:layout_weight="8.5"
+            android:layout_height="44dp"
+            android:text="@string/choose_image_product"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddProduct"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/addProduct"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/border_btn" />
+
+    <TextView
+        android:id="@+id/labelProductList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/label_product_list"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productListRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

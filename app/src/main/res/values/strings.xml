@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CRUD_Products_Firebase</string>
+    <string name="addProduct">Thêm Sản Phẩm</string>
+    <string name="label_product_list">Danh sách sản phẩm:</string>
+    <string name="productPriceLabel">Giá sp:</string>
+    <string name="testProductPrice">35.000 vnđ</string>
+    <string name="todo">TODO</string>
+    <string name="price_product">Giá sản phẩm</string>
+    <string name="type_product">Loại sản phẩm</string>
+    <string name="name_product">Tên sản phẩm</string>
+    <string name="data_product">Dữ liệu sản phẩm</string>
+    <string name="choose_image_product">Chọn ảnh sản phẩm</string>
+    <string name="productNameLabel">Tên sp: </string>
+    <string name="productTypeLabel">Loại sp: </string>
+    <string name="testProductType">Hóa phẩm</string>
+    <string name="testProductName">Khăn giấy baby 200M</string>
+    <string name="productImageLabel">Ảnh sản phẩm: </string>
+    <string name="loading">Đang xử lý...</string>
+</resources>
